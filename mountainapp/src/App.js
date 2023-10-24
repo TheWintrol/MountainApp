@@ -1,13 +1,12 @@
-import logo from "./logo.svg";
 import "./TicTacToe/style.scss";
 
+import { Mountains } from "./Mountains";
 import { mountains } from "./mountainsList";
-import { TicTacToeApp } from "./TicTacToe";
 
 export const App = () => {
   return (
     <div className="App">
-      <TicTacToeApp />
+      <Mountains mountains={mountains} />
     </div>
   );
 };

@@ -6,6 +6,7 @@
     font-family: sans-serif;
     margin: 20px;
     padding: 0;
+    background-color:rgb(126, 173, 173);
   }
   
   h1 {
@@ -45,18 +46,8 @@
   ul {
     padding-inline-start: 20px;
   }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-    margin: 20px;
-    padding: 0;
-  }
-  
-  .square {
+
+   .square {
     background: #fff;
     border: 1px solid #999;
     float: left;
@@ -88,4 +79,3 @@
   .game-info {
     margin-left: 20px;
   }
-  

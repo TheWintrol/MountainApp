@@ -1,7 +1,26 @@
 .mountains {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 16px;
+}
+
+.mountain-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mountain-info p {
+  font-size: 16px;
+  color: #333;
+}
+
+.mountain-info img {
+  display: flex;
+  max-width: 40%; 
+  height: auto; 
+  display: block; 
+  margin-bottom: 10px;
+  align-items: center;
 }
