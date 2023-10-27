@@ -1,13 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.scss';
-import {App} from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./index.scss";
+
+import reportWebVitals from "./reportWebVitals";
+
+import { Mountains } from "./mountains";
+import { mountains } from "./mountainsList";
+import { MountainDetails } from "./MountainDetails";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Mountains mountains={mountains} />,
+  },
+  {
+    path: "/mountains/:id",
+    element: <MountainDetails mountains={mountains} />,
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

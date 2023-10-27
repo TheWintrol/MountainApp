@@ -2,32 +2,45 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
-  background-color:rgb(126, 173, 173);
+  background-color:rgb(231, 215, 193);
 }
 
 .mountains {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mountain-info {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px; /* Adjust the value here to make the padding smaller */
+  text-align: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.mountain-info:hover {
+  background-color: rgb(167, 138, 127); /* Change to a slightly different color on hover */
 }
 
 .mountain-info h2 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .mountain-info p {
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
 }
 
 .mountain-info img {
-  display: flex;
-  max-width: 40%; 
-  height: auto; 
-  display: block; 
-  margin-bottom: 10px;
-  align-items: center;
+  max-width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
+
+
