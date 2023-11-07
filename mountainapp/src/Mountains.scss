@@ -5,6 +5,33 @@ body {
   background-color:rgb(231, 215, 193);
 }
 
+.mountains-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #8c8c8c;
+  box-shadow: 0 0 5px #8c8c8c;
+}
+
 .mountains {
   display: flex;
   flex-wrap: wrap;
@@ -15,15 +42,14 @@ body {
 .mountain-info {
   width: 300px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px; /* Adjust the value here to make the padding smaller */
-  text-align: center;
+  border-radius: 10px;
+  padding: 10px; 
   text-align: center;
   transition: background-color 0.3s ease;
 }
 
 .mountain-info:hover {
-  background-color: rgb(167, 138, 127); /* Change to a slightly different color on hover */
+  background-color: rgb(167, 138, 127); 
 }
 
 .mountain-info h2 {

@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <Mountains mountains={mountains} />,
   },
   {
-    path: "/mountains/:id",
+    path: "/mountains/:slug",
     element: <MountainDetails mountains={mountains} />,
   },
 ]);

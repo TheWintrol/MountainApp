@@ -3,8 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import "./mountainDetails.scss";
 
 export const MountainDetails = ({ mountains }) => {
-  const { id } = useParams();
-  const mountain = mountains.find((m) => m.name === id);
+  const { slug } = useParams();
+  const mountain = mountains.find((m) => m.slug === slug);
 
   if (!mountain) {
     return <div>Mountain not found</div>;
