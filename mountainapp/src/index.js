@@ -2,10 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import "./index.scss";
-
-import reportWebVitals from "./reportWebVitals";
-
 import { Mountains } from "./mountains";
 import { mountains } from "./mountainsList";
 import { MountainDetails } from "./MountainDetails";
